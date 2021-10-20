@@ -31,11 +31,13 @@ class Router {
     // };
 
     go = (_path, _state) => {
-        if (location.pathname === _path) return;
+        // if (location.pathname === _path) return;
+        console.log("here");
         let view;
         if (view = resolve(_path)) {
             pushHistoryState( { state: _state, title: _path, url: _path } );
-            view(_state);
+            console.log("here");
+            new view.view(_state);
         }
     };
 
