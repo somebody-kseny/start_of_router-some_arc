@@ -1,0 +1,1 @@
+name=$1 && handlebars ./${name}.handlebars -o | sed -e '1d;2d;$d' | sed -e "1s/templates\['/export const /;1s/']//;1s/template/Handlebars.template/" > ${name}_templ.js
