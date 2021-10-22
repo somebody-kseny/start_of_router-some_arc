@@ -1,0 +1,19 @@
+#header {
+    grid-column-start: 1;
+    grid-column-end: 19;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: rgb(213, 238, 164);
+    padding: 8px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+#header__logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
